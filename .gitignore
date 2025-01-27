@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+Råbilder_*
+.DS_Store
+*.Rproj
