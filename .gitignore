@@ -7,3 +7,5 @@ Råbilder_*
 Prosesserte_*
 .DS_Store
 *.Rproj
+
+python_virtualenv
