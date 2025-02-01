@@ -14,14 +14,14 @@ installed_packages <- packages %in% rownames(installed.packages())
 # }
 
 if (any(installed_packages == FALSE)) {
-  
+
   if("AgeEstimatoR" %in% packages[!installed_packages]) {
     remotes::install_github("DeepWaterIMR/AgeEstimatoR", dependencies = TRUE,
                             upgrade = "never")
   }
-  
+
   installed_packages <- packages %in% rownames(installed.packages())
-  
+
   install.packages(packages[!installed_packages])
 }
 
@@ -30,7 +30,7 @@ invisible(lapply(packages, library, character.only = TRUE))
 
 # Age estimation
 
-AgeEstimatoR::setup_python()
+# AgeEstimatoR::setup_python()
 
 ## Gammellupe
 
